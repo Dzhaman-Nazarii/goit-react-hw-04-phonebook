@@ -1,20 +1,17 @@
-import { Component } from 'react'
 import PropTypes from 'prop-types';
 
-export default class Filter extends Component {
+export default function Filter() {
 
-  handleSearch = ({target}) => {
+  const handleSearch = ({target}) => {
     this.props.onChange(target.value)
   }
 
-  render() {
     return (
       <label>
         Find contact by name
-      <input name='search' placeholder='Search...' onChange={this.handleSearch}></input>
+      <input name='search' placeholder='Search...' onChange={handleSearch}></input>
     </label>
     )
-  }
 }
 
 Filter.propTypes = {
