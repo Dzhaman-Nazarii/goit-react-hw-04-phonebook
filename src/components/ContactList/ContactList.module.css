@@ -1,0 +1,12 @@
+.buttonList {
+  margin-left: 30px;
+}
+
+li {
+  margin: 5px;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
