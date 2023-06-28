@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-export default function Filter() {
+export default function Filter({onChange}) {
 
   const handleSearch = ({target}) => {
-    this.props.onChange(target.value)
+    onChange(target.value)
   }
 
     return (
